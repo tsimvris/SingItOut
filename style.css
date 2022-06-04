@@ -9,11 +9,6 @@ li, #logo, img, .button, .fa-bars {transition: all 300ms; -webkit-transition: al
 header{
     display: flex;
     justify-content: space-between;
-    width:100%;
-    height:65px;
-    position: fixed;
-    top:0;
-    left:0;
     background: #736CED;
     z-index: 1;
 }
