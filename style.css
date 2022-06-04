@@ -1,40 +1,80 @@
-html, body{ margin:0;  padding:0; height:100%; text-align: center; background-color: #FEF9FF; color:#9F9FED;}
-section{min-height:100vh;}
+html, body{ margin:0;  padding:0; height:100%; text-align: center; background-color: #2C2C54; color:#F96E46;}
+section{min-height:100vh; width: 80%; margin-left: 20%;}
 a{text-decoration: none;}
 li{list-style-type: none;}
 hr{width: 30px; height:3px; background: white; border:0; margin: 0 auto 40px auto;}
-li, #logo, img, .button, .fa-bars {transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -o-transition: all 300ms;}
-.fa-bars{display: none;}
+li, #logo, img {
+    transition: all 300ms;
+     -webkit-transition: all 300ms;
+     -moz-transition: all 300ms;
+     -o-transition: all 300ms;}
+     
 /* HEADER   ****************************/
 header{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    background: #736CED;
+    background: #A5B9DF;
     z-index: 1;
+    position: fixed;
+    left:0;
+    margin: 0px;
+    width:15%;
+    height:100%;
 }
-header ul a li{    color: #F2DFD7;
+header ul a li{    color: #F96E46;
 }
 #logo{
-    width: 140px;
+    margin:0;
+    width: 240px;
     float:left;
-    margin: 10px 0 0 50px;
+    margin: 15px -15px;
 }
 #logo:hover{
     opacity: 0.5;
 }
 #logo img{
     width:100%;
-    height: 50px;
+    height: 200px;
 }
-header nav { display:flex; float: right; margin: 10px 50px 0 0 ; }
-header nav ul li{float: left; margin-left: 25px;}
-header nav ul li a{font-size: 16px;}
-header nav ul li:hover{padding-top: 5px;}
+header nav { 
+    display:flex; 
+    flex-direction: column;
+    
+ }
+ header nav ul a li {
+    font-size: 16px;
+    margin-bottom: 20px;
+ }
+
+header nav ul li{
+    width:fit-content;
+}
+header nav ul li:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+    border-bottom: #F96E46 2px solid;
+}
+.legal{
+    background-color: #F96E46;
+    width:100%;
+}
+.legal ul{
+    display: flex;
+    font-size: 10px;
+    justify-content: space-around;
+    align-items: center;
+    padding:0 !important;
+}
+.legal ul a li{
+    color:#2C2C54 !important;
+
+}
 
 /* HOME   ****************************/
 
 #home h1{
-    margin: 120px auto 0 auto;
+    margin: 20px auto;
     font-size: 110px;
 }
 #home h2{
@@ -43,43 +83,82 @@ header nav ul li:hover{padding-top: 5px;}
 }
 #home hr{
 visibility: hidden;}
+
+.scroll{
+    transform: scale(1.2);
+}
+.scroll:hover{
+    transform: scale(1.8);
+}
 /* EVENTS   ****************************/
+.eventtitle{
+    margin: 30px auto;
+    font-size: 110px;
+}
+.allevents{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 
-
-
+.allevents div{
+    margin: 20px 15px;
+}
+.joinusbanner{
+    color:#A5B9DF;
+}
+.joinusbanner:hover{
+transform: scale(1.2);}
 
 
 /* JOINUS   ****************************/
+.eventtitle{
+    margin: 30px auto;
+    font-size: 110px;
+}
 
+form{
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input{
+   
+    margin-bottom: 20px;
+}
 
 /* WINNERS   ****************************/
-
-/* FOOTER   ****************************/
-footer{
+.winner-all{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 50px;
-    background-color: #736CED;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    
 }
-.legal{
+.winner ol{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    display: flex;
     flex-direction: row;
 }
-footer div a{
-    color:#F2DFD7;
+.winner ol li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
     margin-right: 20px;
-    padding-right: 20px;
+
 }
-footer img{
-    margin-top:5px;
-    height:40px;
+.winner img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
 }
-.legal li:hover{padding-top: 5px;}
