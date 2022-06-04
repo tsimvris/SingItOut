@@ -1,0 +1,90 @@
+html, body{ margin:0;  padding:0; height:100%; text-align: center; background-color: #FEF9FF; color:#9F9FED;}
+section{min-height:100vh;}
+a{text-decoration: none;}
+li{list-style-type: none;}
+hr{width: 30px; height:3px; background: white; border:0; margin: 0 auto 40px auto;}
+li, #logo, img, .button, .fa-bars {transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -o-transition: all 300ms;}
+.fa-bars{display: none;}
+/* HEADER   ****************************/
+header{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    height:65px;
+    position: fixed;
+    top:0;
+    left:0;
+    background: #736CED;
+    z-index: 1;
+}
+header ul a li{    color: #F2DFD7;
+}
+#logo{
+    width: 140px;
+    float:left;
+    margin: 10px 0 0 50px;
+}
+#logo:hover{
+    opacity: 0.5;
+}
+#logo img{
+    width:100%;
+    height: 50px;
+}
+header nav { display:flex; float: right; margin: 10px 50px 0 0 ; }
+header nav ul li{float: left; margin-left: 25px;}
+header nav ul li a{font-size: 16px;}
+header nav ul li:hover{padding-top: 5px;}
+
+/* HOME   ****************************/
+
+#home h1{
+    margin: 120px auto 0 auto;
+    font-size: 110px;
+}
+#home h2{
+    margin: 0 auto 0 auto;
+    font-size: 25px;
+}
+#home hr{
+visibility: hidden;}
+/* EVENTS   ****************************/
+
+
+
+
+
+/* JOINUS   ****************************/
+
+
+/* WINNERS   ****************************/
+
+/* FOOTER   ****************************/
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #736CED;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    
+}
+.legal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+footer div a{
+    color:#F2DFD7;
+    margin-right: 20px;
+    padding-right: 20px;
+}
+footer img{
+    margin-top:5px;
+    height:40px;
+}
+.legal li:hover{padding-top: 5px;}
